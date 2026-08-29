@@ -22,12 +22,12 @@ export function OtherCases() {
 
   return (
     <section id="other-cases" className="my-14 sm:my-20">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#132842] tracking-tight mb-4 font-title">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#132842] tracking-tight mb-4 font-title text-center">
         O padrão se repete
       </h2>
 
-      <div className="editorial-article-body mb-6">
-        <p className="text-lg text-slate-700 font-medium">
+      <div className="editorial-article-body mb-6 text-center">
+        <p className="text-lg text-slate-700 font-medium text-center">
           Em outros dossiês da Verum:
         </p>
       </div>

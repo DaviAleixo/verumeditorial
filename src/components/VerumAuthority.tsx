@@ -52,7 +52,7 @@ export function VerumAuthority() {
         </div>
       </div>
 
-      <p className="text-lg font-medium text-slate-800">
+      <p className="text-lg font-medium text-slate-800 text-center">
         O caso de Alagoas não é isolado.
       </p>
     </section>
