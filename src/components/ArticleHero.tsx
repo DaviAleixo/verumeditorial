@@ -16,8 +16,8 @@ export function ArticleHero() {
 
         {/* Dominant Headline (Centered on mobile, left on desktop) */}
         <h1 className="text-[2.2rem] sm:text-[2.85rem] md:text-[3.35rem] lg:text-[3.75rem] font-bold text-[#132842] leading-[1.12] sm:leading-[1.14] tracking-[-0.03em] mb-5 sm:mb-7 text-center sm:text-left">
-          O banco cobra.{' '}
-          <span className="text-[#2b86ff]">A empresa sufoca.</span>{' '}
+          <span className="block">O banco cobra.</span>
+          <span className="block text-[#2b86ff]">A empresa sufoca.</span>
           <span className="block text-slate-800">O patrimônio entra na mira.</span>
         </h1>
 
