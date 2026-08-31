@@ -33,7 +33,7 @@ export function StickyMobileBar() {
           href={siteConfig.ctaUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-1.5 rounded-md bg-[#2b86ff] hover:bg-[#1d4ed8] text-white text-xs font-semibold px-4 py-2 transition-colors cursor-pointer"
+          className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-[#2b86ff] hover:bg-[#1f75e7] active:bg-[#1864cc] text-white text-xs font-bold px-4 py-2.5 transition-colors cursor-pointer shadow-md shadow-blue-500/20"
         >
           <span>Solicitar Análise</span>
           <ArrowRight size={14} />

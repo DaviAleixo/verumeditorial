@@ -130,3 +130,33 @@
   animation: highlightPulse 2.4s ease-out forwards;
   border-radius: 0.5rem;
 }
+
+/* Subtle & Elegant CTA Animations */
+@keyframes ctaGlowPulse {
+  0%, 100% {
+    box-shadow: 0 4px 14px 0 rgba(43, 134, 255, 0.25);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 20px 0 rgba(43, 134, 255, 0.45);
+    transform: scale(1.01);
+  }
+}
+
+@keyframes continuousShine {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  20%, 100% {
+    transform: translateX(300%) skewX(-20deg);
+  }
+}
+
+.animate-cta-pulse {
+  animation: ctaGlowPulse 3s infinite ease-in-out;
+}
+
+.animate-cta-shine {
+  animation: continuousShine 4.5s infinite ease-in-out;
+}
+

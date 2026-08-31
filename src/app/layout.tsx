@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/config/site'
+import { CookieBanner } from '@/components/CookieBanner'
+import { PrivacyModal } from '@/components/PrivacyModal'
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -61,9 +63,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${plusJakartaSans.variable} ${inter.variable}`}>
-      <body className="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-slate-900 font-sans">
+    <html lang="pt-BR" className={`${plusJakartaSans.variable} ${inter.variable}`} suppressHydrationWarning>
+      <body
+        className="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-slate-900 font-sans"
+        suppressHydrationWarning
+      >
         {children}
+        <CookieBanner />
+        <PrivacyModal />
       </body>
     </html>
   )
